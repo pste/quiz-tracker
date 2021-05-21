@@ -1,0 +1,7 @@
+{
+  "name": "quiz-tracker",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
