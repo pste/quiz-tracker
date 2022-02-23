@@ -26,8 +26,8 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import { IonGrid, IonCol, IonRow, IonButton } from '@ionic/vue'
-import PageWrap from '@/components/PageWrap'
-import ButtonGrid from '@/components/ButtonGrid'
+import PageWrap from '@/components/PageWrap.vue'
+import ButtonGrid from '@/components/ButtonGrid.vue'
 
 export default defineComponent({
   name: 'Answers',

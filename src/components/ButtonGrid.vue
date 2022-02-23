@@ -27,7 +27,10 @@ export default defineComponent({
   },
 
   props: {
-    index: Number,
+    index: {
+      type: Number,
+      required: true,
+    },
   },
 
   data:() => ({
@@ -35,13 +38,17 @@ export default defineComponent({
   }),
 
   computed: {
-    buttons: function() {
-      return this.globals.questions[this.index]
+    questions: function(): string[][] {
+      return this.globals.questions
+    },
+
+    buttons: function(): string[] {
+      return this.questions[this.index]
     }
   },
 
   methods: {
-    numberToLetter( idx ) {
+    numberToLetter( idx: number ): string {
       // 65 => A
       // 97 => a
       return String.fromCharCode( idx + 65 )
